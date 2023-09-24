@@ -57,7 +57,7 @@ h1 {
     cursor: not-allowed;
 }
 #result {
-    color: black; /* Change the color of the player's turn text to black */
+    color: black;
     text-align: center;
     text-shadow: 1px 1px 2px #000000;
     font-size: 25px;
