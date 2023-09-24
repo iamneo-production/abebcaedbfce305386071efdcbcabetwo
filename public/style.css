@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;600;700&display=swap");
+
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2018/03/17/19/36/connection-3234929_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: "Radio Canada", sans-serif;
+    background-color: #f2f2f2;
+    margin: 0; /* Remove default body margin */
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 50px;
+}
+.board {
+    text-align: center;
+    margin: 0 auto; /* Center horizontally */
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); /* Change to rows */
+    gap: 10px; /* Adjust the gap between cells as needed */
+    max-width: 300px; /* Set a maximum width for the grid */
+    margin-top: 60px; /* Adjust the top margin to center vertically */
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1px;
+    grid-column: 1 / 4; /* Span all 3 columns */
+}
+
+.btn {
+    border: 2px solid #000000;
+    border-radius: 10px;
+    height: 75px;
+    width: 75px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000000;
+    text-shadow: 1px 1px 2px #ffffff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn[disabled] {
+    color: #000000;
+    cursor: not-allowed;
+}
+#result {
+    color: black; /* Change the color of the player's turn text to black */
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 25px;
+    margin: auto;
+}
+
+#result-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 200px;
+    margin: 10px auto; /* Center the result container horizontally */
+    padding: 10px;
+}
+
+#winner {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #000000;
+    text-align: center;
+    border-radius: 10px;
+    display: none;
+    max-width: 150px;
+    margin: 10px auto; /* Center the result container horizontally */
+    padding: 10px;
+}
+
+#reset-container {
+    display: flex;
+    justify-content: center; /* Center the reset button horizontally */
+    margin-top: 20px;
+}
+
+#reset-btn {
+    border: 2px solid #ffffff; /* Set border color to white */
+    background-color: black; /* Set background color to white */
+    color: white; /* Set text color to black */
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#reset-btn:hover {
+    background-color: #000000; /* Change background color on hover to black */
+    color: #ffffff; /* Change text color on hover to white */
+}
+
+
+
